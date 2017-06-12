@@ -65,6 +65,10 @@ class ArticleController extends Controller
         $thisemail->save();
         return redirect('/');  
     }
+    public function viewsubs(){
+        $subs = Subscription::all();
+        return view('subs',['subs'=>$subs]);
+    }
 
     
 }
