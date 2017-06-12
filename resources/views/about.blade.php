@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<!-- Mirrored from real.aspirethemes.com/about/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Sep 2016 09:56:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -190,5 +188,4 @@
 
 </body>
 
-<!-- Mirrored from real.aspirethemes.com/about/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Sep 2016 09:56:16 GMT -->
 </html>

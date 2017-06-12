@@ -38,7 +38,7 @@ Route::get('/about', 'ArticleController@aboutVe');
 
 Route::post('/postmail', 'ArticleController@mailpost');
 
-//Route::get('/viewarticles', 'ArticleController@viewcomment');
+Route::get('/subscribers', 'ArticleController@viewsubs');
 
 Auth::routes();
 
