@@ -43,7 +43,8 @@ class ArticleController extends Controller
     	$article = Article::find($id);
         $comments = Comment::where('article_id', $id)->get();
         $darticle = Article::inRandomOrder()->get()->take(1);
-    	return view('article', ['article' => $article, 'comments' => $comments, 'darticle' => $darticle]);
+        $title = $article->title;
+    	return view('article', ['title'=>$title,'article' => $article, 'comments' => $comments, 'darticle' => $darticle]);
     }
 
     public function commentupload(){
@@ -56,7 +57,8 @@ class ArticleController extends Controller
     }
 
     public function aboutVe(){
-        return view('about');
+        $title = 'About';
+        return view('about', ['title'=>$title]);
     }
 
     public function mailpost(){

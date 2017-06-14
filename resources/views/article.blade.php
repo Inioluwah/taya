@@ -1,121 +1,6 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.mother')
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{$article->title}}</title>
-
-  <link rel="shortcut icon" href="../assets/favicon.ico">
-
-  <script type="text/javascript">
-    document.documentElement.className = ' fade-out';
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/app.minb392.css?v=9d1181f046">
-
-  <link rel="canonical" href="index.html" />
-    <meta name="referrer" content="origin" />
-    
-    <meta property="og:site_name" content="VeBLoG" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Everybody listen! We have to put a barrier between us and the world!" />
-    <meta property="og:description" content="Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing" />
-    <meta property="og:url" content="http://real.aspirethemes.com/everybody-listen-we-have-to-put-a-barrier-between-us-and-the-snakes/" />
-    <meta property="og:image" content="http://real.aspirethemes.com/content/images/2016/05/photo-1445377460552-b8989ca80820.jpeg" />
-    <meta property="article:published_time" content="2015-12-22T15:06:49.304Z" />
-    <meta property="article:modified_time" content="2016-05-24T13:32:29.347Z" />
-    <meta property="article:tag" content="travel" />
-    <meta property="article:tag" content="lifestyle" />
-    
-    <meta property="article:publisher" content="https://www.facebook.com/aspirethemes" />
-    <meta property="article:author" content="https://www.facebook.com/aspirethemes" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Everybody listen! We have to put a barrier between us and the world!" />
-    <meta name="twitter:description" content="Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing" />
-    <meta name="twitter:url" content="http://real.aspirethemes.com/everybody-listen-we-have-to-put-a-barrier-between-us-and-the-snakes/" />
-    <meta name="twitter:image:src" content="http://real.aspirethemes.com/content/images/2016/05/photo-1445377460552-b8989ca80820.jpeg" />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="Ahmad Ajmi" />
-    <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="travel, lifestyle" />
-    <meta name="twitter:site" content="@aspirethemes" />
-    <meta name="twitter:creator" content="@aspirethemes" />
-    
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "publisher": {
-        "@type": "Organization",
-        "name": "VeBLoG",
-        "logo": "http://real.aspirethemes.com/ghost/img/ghosticon.jpg"
-    },
-    "author": {
-        "@type": "Person",
-        "name": "Ahmad Ajmi",
-        "image": "http://real.aspirethemes.com/content/images/2016/08/Ahmad-Ajmi.jpg",
-        "url": "http://real.aspirethemes.com/author/ahmad-ajmi/",
-        "sameAs": [
-            "http://aspirethemes.com/",
-            "https://www.facebook.com/aspirethemes",
-            "https://twitter.com/aspirethemes"
-        ],
-        "description": "Author &amp; developer of Aspire Themes. Minimalist. I love creating clean and minimal websites.Technical writer at SitePoint."
-    },
-    "headline": "Everybody listen! We have to put a barrier between us and the world!",
-    "url": "http://real.aspirethemes.com/everybody-listen-we-have-to-put-a-barrier-between-us-and-the-snakes/",
-    "datePublished": "2015-12-22T15:06:49.304Z",
-    "dateModified": "2016-05-24T13:32:29.347Z",
-    "image": "http://real.aspirethemes.com/content/images/2016/05/photo-1445377460552-b8989ca80820.jpeg",
-    "keywords": "travel, lifestyle",
-    "description": "Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing"
-}
-    </script>
-
-    <meta name="generator" content="Ghost 0.8" />
-    <link rel="alternate" type="application/rss+xml" title="Real" href="../rss/index.html" />
-</head>
-<body class="post-template tag-travel tag-lifestyle">
-
-  <div class="off-canvas-container">
-    
-
-<header class="site-header ">
-
-  <div class="row row--full">
-
-    <div class="column small-8 medium-3 large-3">
-      <h1 class="logo"><a href="../index.html">VeBLoG</a></h1>
-    </div>
-
-    <label class="off-canvas-toggle"><span data-icon="ei-navicon" data-size="s"></span></label>
-
-    <div class="off-canvas-content">
-      <div class="column medium-9 large-9">
-        <nav class="navigation navigation--header">
-          <ul class="list-bare">
-            <li class="nav-home" role="presentation"><a href="/">Home</a></li>
-<li class="nav-about" role="presentation"><a href="/about">About</a></li>
-<li class="nav-style-guide" role="presentation"><a href="../style-guide/index.html">Style Guide</a></li>
-
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-  </div> 
-
-</header>
-    
-
-
-
-<div class="wrapper">
+@section('content')
 
   <div class="post-cover">
       <div class="row row--full">
@@ -160,8 +45,7 @@
   </li>
 
   <li>
-    <a class="share-list__link" title="Share on Facebook" href="https://www.facebook.com/sharer?text={{$article->title}}&amp;url={{Request::url()}}"
-  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    <a class="share-list__link" title="Share on Facebook" href="https://www.facebook.com/sharer?text={{$article->title}}&amp;url={{Request::url()}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
     <div data-icon="ei-sc-facebook" data-size="s" class="share-list__icon share-list__icon--facebook"></div>
     </a>
   </li>
@@ -277,84 +161,9 @@
 
 </div>          <hr>
 
-        <section class="disqus">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname = "VeBLoG";
-    var disqus_identifier = "ghost-23";
-
-  </script>
-  
-</section>
+       
       </article>
 
     </div> 
   </div> 
-
-</div> 
-
-
-
-    <footer class="footer">
-  <div class="row row--full">
-
-    <div class="column large-12 footer__section">
-      <nav class="navigation">
-        <ul class="list-bare footer__nav text-center">
-          <li class="nav-home" role="presentation"><a href="/welcome">Home</a></li>
-<li class="nav-about" role="presentation"><a href="/about">About</a></li>
-
-          <li><a class="subscribe-button icon-feed" href="../rss/index.html">RSS</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="column large-12 footer__section">
-      <ul class="list-bare footer__nav social-icons text-center">
-          <li>
-            <a href="https://twitter.com/aspirethemes" target="_blank">
-              <span data-icon="ei-sc-twitter" data-size="s"></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/aspirethemes" target="_blank">
-              <span data-icon="ei-sc-facebook" data-size="s"></span>
-            </a>
-          </li>
-        <li>
-          <a href="https://instagram.com/" target="_blank">
-            <span data-icon="ei-sc-instagram" data-size="s"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://pinterest.com/" target="_blank" class="block">
-            <span data-icon="ei-sc-pinterest" data-size="s"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://vimeo.com/" target="_blank" class="block">
-            <span data-icon="ei-sc-vimeo" data-size="s"></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="column large-12 footer__section">
-      <div class="text-center">
-        <div class="font-tiny">
-          &copy; 2016 Real
-        </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
-    
-  </div>
-
-
-  <script type="text/javascript" src="../assets/js/app.minb392.js?v=9d1181f046"></script>
-
-</body>
-
-</html>
+@endsection
