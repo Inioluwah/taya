@@ -16,8 +16,7 @@ Route::get('/', function () {
 	//$articles = Article::orderBy('created_at','desc')->get();
 	//$articles = Article::inRandomOrder()->get()->take(3);
 	$articles = Article::inRandomOrder()->paginate(10);
-	$title = 'VeBLoG';
-    return view('welcome',['title'=>$title, 'articles'=>$articles]);
+	return view('welcome',['articles'=>$articles]);
 });
 
 Route::group(['middleware'=> 'App\Http\Middleware\AdminMiddleware'], function(){
